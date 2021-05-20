@@ -1,12 +1,13 @@
 class Bob{
     constructor(){
       var options = {
-        restitution: 1.6,
-        friction: 1,
-        density: 1.2
+        isStatic: false,
+        restitution: 1.1,
+        friction: 0,
+        density: 8
       };
-      this.body = Bodies.rectangle(250, 550, 40, 40, options);
-      this.width = 35;
+      this.body = Bodies.circle(440, 440, 30, options);
+      this.width = 30;
       World.add(world, this.body);
     };
     display() {

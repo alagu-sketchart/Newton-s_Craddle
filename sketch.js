@@ -52,12 +52,12 @@ function draw(){
 
 function keyPressed() {
 	if (keyCode === RIGHT_ARROW){
-		Matter.Body.applyForce(bob5.body,bob5.body.position,{x:75,y:-75});
+		Matter.Body.applyForce(bob5.body,bob5.body.position,{x:1000,y:-1000});
 	}
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-75,y:-75});
+		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-1000,y:-1000});
 	}
 	if (keyCode === LEFT_ARROW){
-		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-75,y:-75});
+		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-1000,y:-1000});
 	}
 }
